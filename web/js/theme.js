@@ -6,6 +6,7 @@ const themeConfig = {
     simple_black: "simple_black.css",
     simple_white: "simple_white.css",
     lyre: "lyre.css",
+    void: "void.css",
 };
 
 // Function to change the theme
