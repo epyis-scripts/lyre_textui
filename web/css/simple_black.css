@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+/* GLOBAL DESIGN FOR CONTAINER AND ALL TEXTUIs */
+
+#textui-container {
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    background: #0000009d;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    color: #ebebeb;
+    top: 50%;
+    right: 5%;
+    padding: 10px;
+    height: 0px; /* DO NOT CHANGE */
+    min-width: 250px;
+    text-shadow: #000000 1px 0 10px;
+    box-shadow: #000000 1px 0 10px;
+}
+
+#textui-container .textui {
+    display: flex;
+    white-space: nowrap;
+    margin: 5px;
+    height: 27px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#textui-container .textui.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* KEYBOARD ELEMENT */
+
+#textui-container .textui .key {
+    color: whitesmoke;
+    background: rgb(0, 0, 0);
+    height: 23px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    box-shadow: #00000075 1px 0 10px;
+    text-shadow: #00000000 1px 0 10px;
+}
+
+#textui-container .textui.arg-pressed .key {
+    background: rgb(32, 32, 32);
+    transition: 0.1s ease;
+}
+
+
+/* PROGRESS BAR ELEMENT */
+
+#textui-container .textui .progress-bar {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 27px;
+    margin-bottom: 10px;
+}
+
+#textui-container .textui .progress-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+#textui-container .textui .progress-background {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#textui-container .textui .progress-bar-fill {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);;
+    transition: width 0.3s ease;
+}
+
+#textui-container .textui .progress-bar-fill.no-text,
+#textui-container .textui .progress-background.no-text {
+    top: 50%;
+}
+
+
+/* "IMPORTANT" CLASS TO USE IN TEXT PARAMETERS */
+
+#textui-container .textui .important {
+    color: whitesmoke;
+    background: rgb(0, 0, 0);
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #00000075 1px 0 10px;
+    text-shadow: #00000000 1px 0 10px;
+}
