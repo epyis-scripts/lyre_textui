@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
 		local pedCoords = GetEntityCoords(ped)
 		if #(pedCoords - coords) < 5 then
 			textui_increase = textui_increase
-				or addTextUI({
+				or exports.lyre_textui:addTextUI({
 					type = "keyboard",
 					content = {
 						text = "Increase the progress bar",
@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 					},
 				})
 			textui_decrease = textui_decrease
-				or addTextUI({
+				or exports.lyre_textui:addTextUI({
 					type = "keyboard",
 					content = {
 						text = "Decrease the progress bar",
@@ -26,7 +26,7 @@ Citizen.CreateThread(function()
 					},
 				})
 			textui_progress = textui_progress
-				or addTextUI({
+				or exports.lyre_textui:addTextUI({
 					type = "progress",
 					content = {
 						text = "Test progress bar",
@@ -36,12 +36,12 @@ Citizen.CreateThread(function()
 					},
 				})
 			if IsControlJustPressed(0, 38) then
-				setStyleArgs(textui_increase.identifier, { "pressed" })
+				exports.lyre_textui:setStyleArgs(textui_increase.identifier, { "pressed" })
 				Citizen.SetTimeout(200, function()
-					setStyleArgs(textui_increase.identifier, {})
+					exports.lyre_textui:setStyleArgs(textui_increase.identifier, {})
 				end)
 				if textui_progress then
-					textui_progress = editTextUI(textui_progress.identifier, {
+					textui_progress = exports.lyre_textui:editTextUI(textui_progress.identifier, {
 						type = "progress",
 						content = {
 							text = "Test progress bar",
@@ -54,12 +54,12 @@ Citizen.CreateThread(function()
 				end
 			end
 			if IsControlJustPressed(0, 23) then
-				setStyleArgs(textui_decrease.identifier, { "pressed" })
+				exports.lyre_textui:setStyleArgs(textui_decrease.identifier, { "pressed" })
 				Citizen.SetTimeout(200, function()
-					setStyleArgs(textui_decrease.identifier, {})
+					exports.lyre_textui:setStyleArgs(textui_decrease.identifier, {})
 				end)
 				if textui_progress then
-					textui_progress = editTextUI(textui_progress.identifier, {
+					textui_progress = exports.lyre_textui:editTextUI(textui_progress.identifier, {
 						type = "progress",
 						content = {
 							text = "Test progress bar",
@@ -71,9 +71,9 @@ Citizen.CreateThread(function()
 				end
 			end
 		else
-			textui_increase = removeTextUI(textui_increase and textui_increase.identifier)
-			textui_decrease = removeTextUI(textui_decrease and textui_decrease.identifier)
-			textui_progress = removeTextUI(textui_progress and textui_progress.identifier)
+			textui_increase = exports.lyre_textui:removeTextUI(textui_increase and textui_increase.identifier)
+			textui_decrease = exports.lyre_textui:removeTextUI(textui_decrease and textui_decrease.identifier)
+			textui_progress = exports.lyre_textui:removeTextUI(textui_progress and textui_progress.identifier)
 		end
 		Citizen.Wait(1)
 	end
