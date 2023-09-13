@@ -23,6 +23,7 @@
     display: flex;
     white-space: nowrap;
     margin: 5px;
+    height: 27px;
     opacity: 0;
     transform: translateY(20px);
     transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
