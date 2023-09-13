@@ -6,12 +6,12 @@
 <p align='center'><b>An advanced textui lib for FiveM</b></p>
 
 Lyre Text UI relies on exports to function. Here is the list of exports:
-- ``addTextUI`` → Allows adding an instruction to the text UI.
-- ``removeTextUI`` → Permits the removal of an instruction from the text UI.
-- ``setStyleArgs`` → Provides interaction with certain styling features.
+- ``addTextUI`` → Allows adding a Text UI.
+- ``removeTextUI`` → Permits the remove a Text UI.
+- ``setStyleArgs`` → Provides interaction with certain styling features for a Text UI.
 - ``editTextUI`` → Allow edit an existing Text UI
 
-There are several types of instructions that you can display on the text UI:
+There are several types of Text UI that you can display:
 1. ``text`` → This represents simple text, which can be formatted with HTML code.
 2. ``keyboard`` → This represents a key, followed by text.
 3. ``progress`` → This represents a progress bar.
