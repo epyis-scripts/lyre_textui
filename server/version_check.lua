@@ -16,7 +16,7 @@ local function checkVersion(err, responseText, headers)
 	end
 	if currentVersion:gsub("%s+", "") ~= responseText:gsub("%s+", "") then
 		print(
-			"^5(^2LYRE_TEXTUI^5) ^4- ^0lyre_fuel is not up to date. The latest release is "
+			"^5(^2LYRE_TEXTUI^5) ^4- ^0lyre_textui is not up to date. The latest release is "
 				.. responseText
 				.. " but you are on release "
 				.. currentVersion
