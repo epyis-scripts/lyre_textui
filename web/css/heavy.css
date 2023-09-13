@@ -89,7 +89,7 @@
     left: 0;
     height: 10px;
     border-radius: 5px;
-    background-color: #ebebeb;
+    background: linear-gradient(#ffffff, #858585);
     transition: width 0.3s ease;
 }
 

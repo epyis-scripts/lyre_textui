@@ -91,7 +91,7 @@
     left: 0;
     height: 10px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);;
+    background: rgba(255, 255, 255, 0.8);
     transition: width 0.3s ease;
 }
 
