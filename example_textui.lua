@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
 			if IsControlJustPressed(0, 38) then
 				exports.lyre_textui:setStyleArgs(textui_increase.identifier, { "pressed" })
 				Citizen.SetTimeout(200, function()
-					exports.lyre_textui:setStyleArgs(textui_increase.identifier, {})
+					exports.lyre_textui:setStyleArgs(textui_increase and textui_increase.identifier, {})
 				end)
 				if textui_progress then
 					textui_progress = exports.lyre_textui:editTextUI(textui_progress.identifier, {
@@ -56,7 +56,7 @@ Citizen.CreateThread(function()
 			if IsControlJustPressed(0, 23) then
 				exports.lyre_textui:setStyleArgs(textui_decrease.identifier, { "pressed" })
 				Citizen.SetTimeout(200, function()
-					exports.lyre_textui:setStyleArgs(textui_decrease.identifier, {})
+					exports.lyre_textui:setStyleArgs(textui_decrease and textui_decrease.identifier, {})
 				end)
 				if textui_progress then
 					textui_progress = exports.lyre_textui:editTextUI(textui_progress.identifier, {
