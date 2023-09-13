@@ -5,5 +5,6 @@
 // - simple_black
 // - simple_white
 // - lyre
+// - void
 
 changeTheme("heavy")
