@@ -15,7 +15,7 @@
     right: 5%;
     padding: 10px;
     height: 0px; /* DO NOT CHANGE */
-    width: 250px;
+    min-width: 250px;
     box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, .5);
 }
 
@@ -75,7 +75,7 @@
 
 #textui-container .textui .progress-background {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 0;
     height: 10px;
     width: 100%;
@@ -85,7 +85,7 @@
 
 #textui-container .textui .progress-bar-fill {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 0;
     height: 10px;
     border-radius: 5px;
