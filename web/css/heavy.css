@@ -17,6 +17,7 @@
     height: 0px; /* DO NOT CHANGE */
     min-width: 250px;
     box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, .5);
+    font-weight: 350;
 }
 
 #textui-container .textui {
@@ -38,18 +39,19 @@
 /* KEYBOARD ELEMENT */
 
 #textui-container .textui .key {
-    color: black;
-    background-color: #ebebeb;
-    height: 27px;
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
+    height: 23px;
     margin-right: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 1.0);
+    box-shadow: #00000075 1px 0 10px;
+    text-shadow: #00000000 1px 0 10px;
 }
 
 #textui-container .textui.arg-pressed .key {
@@ -102,16 +104,17 @@
 /* "IMPORTANT" CLASS TO USE IN TEXT PARAMETERS */
 
 #textui-container .textui .important {
-    color: black;
-    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
+    background: whitesmoke;
     height: 25px;
     margin-right: 5px;
     margin-left: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 1.0);
+    box-shadow: #00000075 1px 0 10px;
+    text-shadow: #00000000 1px 0 10px;
 }
