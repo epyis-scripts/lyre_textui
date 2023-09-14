@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
 				or exports.lyre_textui:addTextUI({
 					type = "keyboard",
 					content = {
-						text = "Increase <div class='important'>the progress bar</div>",
+						text = "Increase <div class='important'>the progress bar</div>menu test",
 						keyboard = "E",
 					},
 				})
