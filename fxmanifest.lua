@@ -3,7 +3,7 @@ game("gta5")
 
 description("Text UI")
 author("Lyre Scripts")
-version("1.0.0")
+version("1.0.1")
 lua54("yes")
 
 files({
